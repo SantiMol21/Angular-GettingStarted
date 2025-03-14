@@ -17,7 +17,8 @@ import { RouterLinkActive, RouterLink, RouterOutlet } from "@angular/router";
     </div>
     `,
     styleUrls: ['./app.component.css'],
-    imports: [RouterLinkActive, RouterLink, RouterOutlet]
+    imports: [RouterLinkActive, RouterLink, RouterOutlet],
+    standalone:true
 })
 export class AppComponent {
   pageTitle = 'Acme Product Management';

@@ -13,7 +13,8 @@ import { FormsModule } from "@angular/forms";
     styleUrls: ['./product-list.component.css'],
     imports: [FormsModule, NgIf, NgFor,
         RouterLink, StarComponent, LowerCasePipe,
-        CurrencyPipe, ConvertToSpacesPipe]
+        CurrencyPipe, ConvertToSpacesPipe],
+    standalone:true
 })
 export class ProductListComponent implements OnInit, OnDestroy {
   pageTitle = 'Product List';

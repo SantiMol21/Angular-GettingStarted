@@ -9,7 +9,8 @@ import { NgIf, LowerCasePipe, CurrencyPipe } from '@angular/common';
 @Component({
     templateUrl: './product-detail.component.html',
     styleUrls: ['./product-detail.component.css'],
-    imports: [NgIf, StarComponent, LowerCasePipe, CurrencyPipe, ConvertToSpacesPipe]
+    imports: [NgIf, StarComponent, LowerCasePipe, CurrencyPipe, ConvertToSpacesPipe],
+    standalone:true
 })
 export class ProductDetailComponent implements OnInit {
   pageTitle = 'Product Detail';
